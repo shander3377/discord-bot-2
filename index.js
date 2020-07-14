@@ -37,4 +37,4 @@ let status = `${bot.users.size} members in ${bot.guilds.size} guilds`
 });
 
  
-bot.login("NzMyNTI2MjQ5OTg1MTc5NzE5.Xw14Xw.CE5ZD9SMF3MChkzewVXU8lrnOOY")
+bot.login(process.env.TOKEN)
