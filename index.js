@@ -21,6 +21,7 @@ let status = `${bot.users.size} members in ${bot.guilds.size} guilds`
 });
 })
  bot.on('message', async message => {
+     if(!message.content.startsWith(prefix)) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
     
