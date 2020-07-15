@@ -18,8 +18,8 @@ module.exports = {
     aliases: ["s"],
     run: async (client, message, args) => {
      const embed = new Discord.RichEmbed()
-     .setTitle("Stock")
-     .setdescription(` Pulsar: ${pulsarstock}\n Alpha: ${alphastock} \n Galaxy: ${galaxystock} \n Hex run: ${hexstock} \n Geometry run: ${geometrystock}`)
+     embed.setTitle("Stock")
+     embed.setDescription(` Pulsar: ${pulsarstock}\n Alpha: ${alphastock} \n Galaxy: ${galaxystock} \n Hex run: ${hexstock} \n Geometry run: ${geometrystock}`)
 message.channel.send(embed)
 }
 }
