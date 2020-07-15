@@ -11,11 +11,11 @@ const hexstock = hexcodes.length-1
 const geometrystock = geometrycodes.length-1
 
 module.exports = {
-    name: "alpha",
+    name: "stock",
     category: "gen",
-    description: "gen alpha game",
+    description: "check stock",
     usage: "[command]",
-    aliases: ["Alpha"],
+    aliases: ["s"],
     run: async (client, message, args) => {
      const embed = new Discord.RichEmbed()
      .setTitle("Stock")
