@@ -7,8 +7,8 @@ const pulsarcodes = require("../../codes/pulsarss.json");
 const pulsarstock = pulsarcodes.length-1
 const alphastock = alphacodes.length-1
 const galaxystock = galaxycodes.length-1
-const hexstock = geometrycodes.length-1
-const pulsarstock = hexcodes.length-1
+const hexstock = hexcodes.length-1
+const geometrystock = geometrycodes.length-1
 
 module.exports = {
     name: "alpha",
@@ -19,7 +19,7 @@ module.exports = {
     run: async (client, message, args) => {
      const embed = new Discord.RichEmbed()
      .setTitle("Stock")
-     .setdescription(` Pulsar: ${pulsarstock}\n Alpha: ${alphastock} \n Galaxy: ${galaxystock} \n Hex run: ${hexstock}`)
+     .setdescription(` Pulsar: ${pulsarstock}\n Alpha: ${alphastock} \n Galaxy: ${galaxystock} \n Hex run: ${hexstock} \n Geometry run: ${geometrystock}`)
 message.channel.send(embed)
 }
 }
